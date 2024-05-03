@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: gainsboro;
+            flex-wrap: wrap;
+            >input{
+                width: 15%;
+                height: 30px;
+                margin: 0 20px;
+                text-transform: capitalize;
+            }
+            >button{
+                width: 10%;
+                height: 30px;
+                margin: 0 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            >h3{
+                width: 100%;
+                height: 50px;
+                margin-top: 50px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <input type="text"  placeholder="enter your number ...">
+        <input type="text"  placeholder="enter your number ...">
+        <button onclick="operate()">send it!</button>
+        <h3 id="plus"></h3>
+        <h3 id="ave"></h3>
+        <h3 id="multi"></h3>
+
+    </main>
+
+
+
+    <script>
+        const num = document.querySelectorAll('main>input')
+        const end = document.getElementById('end')
+
+        function operate(){
+
+            let x = Number(num[0].value)
+            let y = Number(num[1].value)
+
+            plus.innerHTML = 'plus : ' + (x + y)
+            ave.innerHTML = 'average : ' + (x + y)/2
+            multi.innerHTML = 'multiplication : ' + (x * y)
+        }
+
+
+    </script>
+</body>
+</html>

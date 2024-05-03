@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="plus"></h1>
+    <script>
+        let x = prompt('enter your first num...')
+        let y = prompt('enter your last num...')
+        const plus = document.getElementById('plus')
+        para()
+        function para(){
+            let sum = 0
+                for( let x = 0 ; x < y ; x++){
+                sum += x
+            }
+            plus.innerHTML = sum - x
+        }
+    </script>
+</body>
+</html>
